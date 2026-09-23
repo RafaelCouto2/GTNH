@@ -1,6 +1,6 @@
 local getComponents = {}
 
-function getComponents.get_components()
+local function getComponents()
     local component = require("component")
     local list = {}
     for index, value in component.list() do
@@ -10,4 +10,7 @@ function getComponents.get_components()
     return list
 end
 
-return getComponents
+return 
+{
+    getComponents = getComponents
+}
