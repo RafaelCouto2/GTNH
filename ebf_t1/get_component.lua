@@ -1,13 +1,13 @@
 local getComponents = {}
+local component = require("component")
+local component_list = {}
 
 local function getComponents()
-    local component = require("component")
-    local list = {}
     for index, value in component.list() do
-        list[index] = value
+        component_list[index] = value
         print("index: " .. index .. " value: " .. value)
     end
-    return list
+    return component_list
 end
 
 return 
