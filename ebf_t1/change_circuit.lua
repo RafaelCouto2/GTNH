@@ -1,5 +1,12 @@
-local component = require("component")
-
-for index, value in component.list() do
-    print(index, value)
+local function get_components()
+    local component = require("component")
+    local list = {}
+    for index, value in component.list() do
+        list[index] = value
+        print("index: " .. index .. " value: " .. value)
+    end
+    return list
 end
+
+get_components();
+
