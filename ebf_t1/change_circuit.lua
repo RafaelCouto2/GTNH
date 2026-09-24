@@ -1,4 +1,4 @@
 local comp = require("get_component")
-
-comp.getComponent();
+local component = require("component")
+component.gt_machine.setCircuitConfiguration(24)
 
